@@ -5,3 +5,10 @@ node_modules
 .idea
 .vscode
 Generated
+tmp_*
+*-temp
+OWASP_MSTG-SNAPSHOT-*
+logs
+*.pdf
+*.docx
+*.epub
