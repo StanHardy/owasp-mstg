@@ -13,7 +13,7 @@ In this guide, we cover mobile app security testing in two contexts. The first i
 Let's start by defining the concepts:
 
 - **Black-box testing** is conducted without the tester's having any information about the app being tested. This process is sometimes called "zero-knowledge testing". The main purpose of this test is allowing the tester to behave like a real attacker in the sense of exploring possible uses for publicly available and discoverable information.
-- **White-box testing** (sometimes called "full knowledge testing") is the total opposite of black-box testing in the sense that the tester has full knowledge of the app. The knowledge may encompass source code, documentation, and diagrams. This approach allows much faster testing than black-box testing due to it's transparency and with the additional knowledge gained a tester can build much more sophisticated and granular test cases.
+- **White-box testing** (sometimes called "full knowledge testing") is the total opposite of black-box testing in the sense that the tester has full knowledge of the app. The knowledge may encompass source code, documentation, and diagrams. This approach allows much faster testing than black-box testing due to its transparency and with the additional knowledge gained a tester can build much more sophisticated and granular test cases.
 - **Gray-box testing** is all testing that falls in between the two aforementioned testing types: some information is provided to the tester (usually credentials only), and other information is intended to be discovered. This type of testing is an interesting compromise in the number of test cases, the cost, the speed, and the scope of testing. Gray-box testing is the most common kind of testing in the security industry.
 
 We strongly advise that you request the source code so that you can use the testing time as efficiently as possible. The tester's code access obviously doesn't simulate an external attack, but it simplifies the identification of vulnerabilities by allowing the tester to verify every identified anomaly or suspicious behavior at the code level. A white-box test is the way to go if the app hasn't been tested before.
@@ -366,13 +366,3 @@ The security of an application developed with DevOps must be considered during o
 
 - [paul] - M. Paul. Official (ISC)2 Guide to the CSSLP CBK, Second Edition ((ISC)2 Press), 2014
 - [mcgraw] - G McGraw. Software Security: Building Security In, 2006
-
-### OWASP MASVS
-
-- MSTG-ARCH-1: "All app components are identified and known to be needed."
-- MSTG-ARCH-3: "A high-level architecture for the mobile app and all connected remote services has been defined and security has been addressed in that architecture."
-- MSTG-ARCH-4: "Data considered sensitive in the context of the mobile app is clearly identified."
-- MSTG-ARCH-5: "All app components are defined in terms of the business functions and/or security functions they provide."
-- MSTG-ARCH-6: "A threat model for the mobile app and the associated remote services has been produced that identifies potential threats and countermeasures."
-- MSTG-ARCH-7: "All security controls have a centralized implementation."
-- MSTG-ARCH-10: "Security is addressed within all parts of the software development lifecycle."
